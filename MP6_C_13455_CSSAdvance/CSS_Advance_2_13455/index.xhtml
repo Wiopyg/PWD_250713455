@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>Form Pendaftaran Lomba</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Pendaftaran Lomba Pemrograman</h1>
+        <p>Daftarkan tim kamu dengan mengisi data berikut. Lomba ini ditujukan untuk mahasiswa dan pelajar yang tertarik dengan teknologi.</p>
+
+        <h2>Informasi Lomba</h2>
+        <p><strong>Batas pendaftaran:</strong> 15 November 2026</p>
+        <p><strong>Tanggal lomba:</strong> 5 Desember 2026</p>
+        <p><strong>Jumlah anggota:</strong> 2 sampai 4 orang per tim</p>
+
+        <h2>Kategori Lomba</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kategori</th>
+                    <th>Penjelasan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Website</td>
+                    <td>Membuat website yang bermanfaat</td>
+                </tr>
+                <tr>
+                    <td>Aplikasi Mobile</td>
+                    <td>Membuat ide aplikasi untuk telepon genggam</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Mengolah data untuk mendapatkan informasi</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Formulir Pendaftaran Tim</h2>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Data Tim</legend>
+
+                <label for="nama-tim">Nama tim:</label>
+                <input type="text" id="nama-tim" name="nama_tim" required="required" />
+
+                <label for="kampus">Asal kampus atau sekolah:</label>
+                <input type="text" id="kampus" name="kampus" required="required" />
+
+                <label for="ketua">Nama ketua tim:</label>
+                <input type="text" id="ketua" name="ketua" required="required" />
+
+                <label for="email">Email ketua tim:</label>
+                <input type="email" id="email" name="email" required="required" />
+
+                <label for="anggota">Jumlah anggota tim:</label>
+                <select id="anggota" name="anggota" required="required">
+                    <option value="">Pilih jumlah anggota</option>
+                    <option value="2">2 orang</option>
+                    <option value="3">3 orang</option>
+                    <option value="4">4 orang</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ide Lomba</legend>
+
+                <p>Kategori yang dipilih:</p>
+                <input type="radio" id="website" name="kategori" value="Website" required="required" />
+                <label class="inline" for="website">Website</label>
+                <input type="radio" id="mobile" name="kategori" value="Mobile" />
+                <label class="inline" for="mobile">Aplikasi Mobile</label>
+                <input type="radio" id="data" name="kategori" value="Data" />
+                <label class="inline" for="data">Data</label>
+
+                <label for="pengalaman">Pengalaman tim:</label>
+                <select id="pengalaman" name="pengalaman">
+                    <option value="">Pilih pengalaman</option>
+                    <option value="pemula">Pemula</option>
+                    <option value="pernah">Pernah membuat proyek</option>
+                </select>
+
+                <label for="ide">Jelaskan ide proyek tim:</label>
+                <textarea id="ide" name="ide" rows="4" cols="40" required="required"></textarea>
+
+                <input type="checkbox" id="aturan" name="aturan" value="setuju" required="required" />
+                <label class="inline" for="aturan">Saya setuju mengikuti peraturan lomba.</label>
+            </fieldset>
+
+            <input type="submit" value="Daftar Lomba" />
+            <input type="reset" value="Hapus Isian" />
+        </form>
+
+        <p class="catatan">Catatan: Form ini adalah contoh latihan dan belum menyimpan data ke database.</p>
+    </div>
+</body>
+</html>

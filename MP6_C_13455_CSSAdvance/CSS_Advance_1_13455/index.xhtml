@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>Form Pendaftaran Seminar</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Seminar Teknologi Informasi</h1>
+        <p>Silakan isi formulir berikut untuk mendaftar seminar. Pastikan data yang kamu masukkan sudah benar.</p>
+
+        <h2>Informasi Seminar</h2>
+        <p><strong>Tanggal:</strong> Sabtu, 21 November 2026</p>
+        <p><strong>Waktu:</strong> 09.00 - 15.30 WIB</p>
+        <p><strong>Tempat:</strong> Aula Kampus</p>
+
+        <h2>Jadwal Seminar</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Waktu</th>
+                    <th>Kegiatan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09.00</td>
+                    <td>Registrasi peserta</td>
+                </tr>
+                <tr>
+                    <td>09.30</td>
+                    <td>Pembukaan seminar</td>
+                </tr>
+                <tr>
+                    <td>11.00</td>
+                    <td>Diskusi teknologi</td>
+                </tr>
+                <tr>
+                    <td>13.00</td>
+                    <td>Tanya jawab</td>
+                </tr>
+                <tr>
+                    <td>15.00</td>
+                    <td>Penutupan</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Formulir Pendaftaran</h2>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Data Peserta</legend>
+
+                <label for="nama">Nama lengkap:</label>
+                <input type="text" id="nama" name="nama" required="required" />
+
+                <label for="email">Alamat email:</label>
+                <input type="email" id="email" name="email" required="required" />
+
+                <label for="kampus">Asal kampus atau sekolah:</label>
+                <input type="text" id="kampus" name="kampus" required="required" />
+
+                <label for="telepon">Nomor telepon:</label>
+                <input type="text" id="telepon" name="telepon" required="required" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Informasi Tambahan</legend>
+
+                <p>Jenis peserta:</p>
+                <input type="radio" id="mahasiswa" name="jenis" value="Mahasiswa" />
+                <label class="inline" for="mahasiswa">Mahasiswa</label>
+                <input type="radio" id="umum" name="jenis" value="Umum" />
+                <label class="inline" for="umum">Umum</label>
+
+                <label for="sesi">Sesi yang ingin diikuti:</label>
+                <select id="sesi" name="sesi">
+                    <option value="">Pilih sesi</option>
+                    <option value="web">Pembuatan Website</option>
+                    <option value="keamanan">Keamanan Internet</option>
+                    <option value="data">Pengolahan Data</option>
+                </select>
+
+                <label for="alasan">Alasan mengikuti seminar:</label>
+                <textarea id="alasan" name="alasan" rows="4" cols="40"></textarea>
+
+                <input type="checkbox" id="setuju" name="setuju" value="ya" required="required" />
+                <label class="inline" for="setuju">Data yang saya isi sudah benar.</label>
+            </fieldset>
+
+            <input type="submit" value="Daftar Seminar" />
+            <input type="reset" value="Hapus Isian" />
+        </form>
+
+        <p class="catatan">Catatan: Form ini adalah contoh latihan dan belum menyimpan data ke database.</p>
+    </div>
+</body>
+</html>

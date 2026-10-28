@@ -1,0 +1,95 @@
+/* CSS sederhana untuk formulir pendaftaran seminar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #222222;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #cccccc;
+}
+
+h1 {
+    color: #1b4965;
+    text-align: center;
+}
+
+h2 {
+    color: #1b4965;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #999999;
+}
+
+legend {
+    font-weight: bold;
+    color: #1b4965;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 95%;
+    padding: 7px;
+    margin-top: 5px;
+    border: 1px solid #999999;
+}
+
+.inline {
+    display: inline;
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #999999;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #d9eaf7;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 8px 14px;
+    margin-top: 10px;
+    margin-right: 5px;
+    background-color: #1b4965;
+    color: white;
+    border: none;
+}
+
+.catatan {
+    font-size: 12px;
+    color: #666666;
+}
