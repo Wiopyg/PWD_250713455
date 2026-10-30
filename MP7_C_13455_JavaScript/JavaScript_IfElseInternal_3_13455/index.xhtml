@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+
+
+<head>
+    <title>If-else Internal: Wahana Taman Hiburan</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+        var iTinggi;
+        var Dampingi;
+
+        iTinggi = prompt ("Masukkan Tinggi Badan Anda (cm) : ", 0);
+        sDampingi = prompt ("Didampingi Orang Tua? (Y/T) : ", "Y");
+
+        if (iTinggi > 140) {
+            if (sDampingi == "Y") {
+                alert ("Anda Boleh Naik Wahana Ekstrem");
+            } else {
+                alert ("Anda Boleh Naik apabila Didampingi Orang Tua");
+            }
+        } else {
+            if (sDampingi == "Y") {
+                alert ("Hanya Wahana anak (didampingi) ");
+            } else {
+                alert ("Anda Tidak Boleh Naik Wahana Ekstrem");
+            }
+
+        }
+    </script>
+</head> 
+
+<body> 
+    <h1></h1>If-else Internal: Wahana Taman Hiburan</h1>
+    <p>Reload Halaman untuk mencoba kembali</p>
+</body>
+
+</html>
+        
